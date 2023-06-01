@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    min-width:100vh;
+    min-height: 100vh;
+}
+
+.result{
+    grid-row: 1;
+    display: flex;
+    padding: 1em 0;
+    background-color: crimson;
+    border: solid black 2px;
+
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container {
+    grid-row: 2;
+    grid-row-end: 4;
+    display: grid;
+    grid-template-rows:auto;
+    width: 100%;
+}
+
+.aside button {
+    display: block;
+    width: 80px;
+    margin: 10px auto;
+    height: 100%;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#dealersection:last-child {
+    filter: brightness(100);
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    padding: 0 auto;
+    grid-column: 2;
+    background-color: gainsboro;
+    min-width: 170px;
+    flex-shrink: 0;
+    justify-content: space-evenly;
+    align-content: center;
+
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#section1 {
+    display: none;
+}
+
+#scorediv {
+    display: block;
+    margin: 10px 20px;
+    text-align: right;
+}
+
+#presult {
+    font-size: 20pt;
+}
+
+.section {
+    min-height: 200px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: green;
+    border: solid 2px black;
+}
+
+.section .card
+{
+    border: solid 1px #aaa;
+    border-radius: 9px;
+    width: 95px;
+    height: 150px;
+    background-color: white;
+    padding: 3px;
+    margin: 5px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.card .value{
+    font-size:15pt;
+    font-family: sans-serif;
+}
+
+.card .suit
+{
+	background-image: url('https://www.thatsoftwaredude.com/images/post/0f631eeb-6c4a-4bfd-9f86-e0a08ae8584b.png');
+	height: 100px;
+	width: 90px;
+    background-position-x: 7px;
+}
+
+.card .diamonds
+{
+	background-position-y: 100px;
+    background-position-x: 3px;
+}
+
+.card .hearts
+{
+	background-position-x: 93px;
+}
+
+.card .clubs
+{
+	background-position-x:93px;
+	background-position-y:100px;
+}
