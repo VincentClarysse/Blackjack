@@ -21,6 +21,14 @@ body {
     justify-content: space-around;
 }
 
+.result h1 {
+    font-size: 30pt;
+}
+
+.result p {
+    font-size: 20pt;
+}
+
 .container {
     grid-row: 2;
     grid-row-end: 4;
@@ -68,7 +76,7 @@ body {
 }
 
 #presult {
-    font-size: 20pt;
+    font-size: 40pt;
 }
 
 .section {
